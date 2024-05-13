@@ -5,6 +5,7 @@ module.exports = app
 
 const absolutePathIndex = path.join(__dirname, 'views', 'index.html')
 const absolutePathCss = path.join(__dirname, 'public')
+
 /*
 app.get('/', function (req, res) {
   res.send('Hello Express')
@@ -20,5 +21,5 @@ app.get('/', function (req, res) {
 app.use('/public', express.static(absolutePathCss))
 
 app.get('/json', function (req, res) {
-  res.json()
+  res.json({ message: 'Hello json' })
 })
